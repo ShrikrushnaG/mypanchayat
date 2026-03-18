@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nipana Gram Panchayat | Administration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .bg-panchayat { 
+            background: linear-gradient(rgba(20, 83, 45, 0.85), rgba(20, 83, 45, 0.95)), 
+            url('https://images.unsplash.com/photo-1590059391056-b0496333908a?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-green-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-green-700 rounded-full flex items-center justify-center text-white mr-4 shadow-lg shadow-green-200">
+                        <i class="fas fa-landmark text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-green-900 leading-none">NIPANA</h1>
+                        <p class="text-xs text-green-600 font-semibold tracking-tighter uppercase">Gram Panchayat | Khamgaon</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold uppercase tracking-wider">
+                    <a href="#home" class="text-slate-600 hover:text-green-700">Home</a>
+                    <a href="#about" class="text-slate-600 hover:text-green-700">About</a>
+                    <a href="#administration" class="text-slate-600 hover:text-green-700">Administration</a>
+                    <a href="#notices" class="text-slate-600 hover:text-green-700">Notices</a>
+                    <a href="#forms" class="bg-green-700 text-white px-5 py-2.5 rounded-full hover:bg-green-800 transition shadow-md">Services</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMenu()" class="text-green-800 p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-4 space-y-3">
+            <a href="#home" class="block font-semibold text-slate-700">Home</a>
+            <a href="#about" class="block font-semibold text-slate-700">About</a>
+            <a href="#administration" class="block font-semibold text-slate-700">Administration</a>
+            <a href="#notices" class="block font-semibold text-slate-700">Notices</a>
+            <a href="#forms" class="block font-bold text-green-700 underline">Forms</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="bg-panchayat py-32 px-4 text-center text-white">
+        <div class="max-w-4xl mx-auto">
+            <span class="bg-green-500/30 text-green-200 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 inline-block backdrop-blur-sm">District Buldhana</span>
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-6 drop-shadow-md">Nipana Gram Panchayat</h2>
+            <p class="text-lg md:text-xl text-green-50 mb-10 max-w-2xl mx-auto font-light">Dedicated to the holistic development and transparent governance of Nipana village under administrative leadership.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#administration" class="bg-white text-green-900 px-8 py-4 rounded-full font-bold shadow-xl hover:bg-green-50 transition">Administration Info</a>
+                <a href="#notices" class="bg-green-600 text-white border border-green-400 px-8 py-4 rounded-full font-bold shadow-xl hover:bg-green-700 transition">Latest Updates</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-green-100 rounded-full -z-10"></div>
+                    <h3 class="text-3xl font-bold text-slate-900 mb-6 border-l-4 border-green-600 pl-4">Governance Overview</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6 text-lg">
+                        Nipana is a prominent village in the Khamgaon Taluka of Buldhana District. Currently, the village is governed by an **Administrative System** to ensure continuity in development and public service delivery.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        The administration works closely with the residents to manage infrastructure projects, social welfare schemes, and maintain law and order within the village limits.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-green-50 p-8 rounded-3xl text-center">
+                        <i class="fas fa-users text-3xl text-green-700 mb-3"></i>
+                        <p class="text-2xl font-bold text-slate-900">2.5k+</p>
+                        <p class="text-sm text-green-700 font-medium">Residents</p>
+                    </div>
+                    <div class="bg-slate-50 p-8 rounded-3xl text-center">
+                        <i class="fas fa-road text-3xl text-slate-400 mb-3"></i>
+                        <p class="text-2xl font-bold text-slate-900">95%</p>
+                        <p class="text-sm text-slate-500 font-medium">Connectivity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Administration Section -->
+    <section id="administration" class="py-24 px-4 bg-slate-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Administrative Leadership</h2>
+                <div class="w-20 h-1.5 bg-green-600 mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-500 mt-4 italic">Ensuring governance through appointed officers and advisory committees.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Administrator Card -->
+                <div class="bg-white rounded-3xl shadow-sm overflow-hidden border border-slate-200 group hover:shadow-xl transition-all">
+                    <div class="h-64 bg-slate-200 relative">
+                        <!-- Placeholder for photo of Shri Prabhakar Ghate -->
+                        <div class="absolute inset-0 flex items-center justify-center bg-green-900/5">
+                            <i class="fas fa-user-tie text-8xl text-slate-300 group-hover:scale-110 transition duration-500"></i>
+                        </div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-green-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Administrator</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold text-slate-900 mb-1">Hon. Prabhakar Kishan Ghate</h4>
+                        <p class="text-green-700 font-semibold text-sm mb-4 uppercase tracking-tighter">Authorized Administrator</p>
+                        <hr class="mb-4 border-slate-100">
+                        <p class="text-slate-500 text-sm leading-relaxed">Responsible for all executive decisions and strategic development of the Gram Panchayat.</p>
+                    </div>
+                </div>
+
+                <!-- Secretary Card -->
+                <div class="bg-white rounded-3xl shadow-sm overflow-hidden border border-slate-200 group hover:shadow-xl transition-all">
+                    <div class="h-64 bg-slate-200 relative">
+                        <!-- Placeholder for photo of Shri S. T. Gawhale -->
+                        <div class="absolute inset-0 flex items-center justify-center bg-green-900/5">
+                            <i class="fas fa-user-shield text-8xl text-slate-300 group-hover:scale-110 transition duration-500"></i>
+                        </div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-slate-700 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Office Head</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold text-slate-900 mb-1">Shri. S. T. Gawhale</h4>
+                        <p class="text-green-700 font-semibold text-sm mb-4 uppercase tracking-tighter">Gram Panchayat Officer</p>
+                        <hr class="mb-4 border-slate-100">
+                        <p class="text-slate-500 text-sm leading-relaxed">Managing daily office operations, government correspondence, and administrative documentation.</p>
+                    </div>
+                </div>
+
+                <!-- Committee Lead Card -->
+                <div class="bg-white rounded-3xl shadow-sm overflow-hidden border border-slate-200 group hover:shadow-xl transition-all">
+                    <div class="h-64 bg-slate-200 relative">
+                        <!-- Placeholder for photo of Hon. Lilabai Bhatkar -->
+                        <div class="absolute inset-0 flex items-center justify-center bg-green-900/5">
+                            <i class="fas fa-user text-8xl text-slate-300 group-hover:scale-110 transition duration-500"></i>
+                        </div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-orange-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Committee Lead</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold text-slate-900 mb-1">Hon. Lilabai Shrikrushna Bhatkar</h4>
+                        <p class="text-green-700 font-semibold text-sm mb-4 uppercase tracking-tighter">Admin Committee Member (Ex-Member)</p>
+                        <hr class="mb-4 border-slate-100">
+                        <p class="text-slate-500 text-sm leading-relaxed">Providing essential guidance and community insights to help the administrative body.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center text-slate-500 text-sm bg-white p-6 rounded-2xl max-w-2xl mx-auto shadow-sm">
+                <i class="fas fa-info-circle mr-2 text-green-600"></i>
+                The administrative committee consists of experienced 8 ex-members who assist in village governance matters.
+            </div>
+        </div>
+    </section>
+
+    <!-- Notices Section -->
+    <section id="notices" class="py-24 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-bold text-slate-900 mb-10 flex items-center">
+                <span class="w-12 h-12 bg-red-50 text-red-600 rounded-full flex items-center justify-center mr-4">
+                    <i class="fas fa-bell"></i>
+                </span>
+                Latest Notices & Gram Sabha
+            </h3>
+            
+            <div class="space-y-6">
+                <div class="group bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-green-200 transition-all cursor-default">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-bold text-red-600 uppercase tracking-widest">Urgent Notice</span>
+                        <span class="text-xs text-slate-400">Post date: Today</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-green-800 transition">Gram Sabha Meeting Schedule</h4>
+                    <p class="text-slate-600 mb-4">The upcoming Gram Sabha meeting will be chaired by Administrator Shri Prabhakar Ghate to discuss development works. Date and time will be announced shortly.</p>
+                    <div class="flex items-center text-xs font-bold text-green-700">
+                        <i class="far fa-clock mr-2"></i> To be Announced
+                    </div>
+                </div>
+
+                <div class="group bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-green-200 transition-all cursor-default">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-bold text-green-600 uppercase tracking-widest">Status Update</span>
+                        <span class="text-xs text-slate-400">Dec 2023</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-green-800 transition">Tax Collection Drive</h4>
+                    <p class="text-slate-600">All residents are requested to pay their property and water taxes to the Gram Panchayat office to avoid penalty fees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Forms -->
+    <section id="forms" class="py-24 px-4 bg-green-950 text-white rounded-t-[3rem] md:rounded-t-[5rem]">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h3 class="text-4xl font-bold mb-6 italic">Digital Services</h3>
+                    <p class="text-green-300 mb-10 text-lg">Access important applications and certificates without visiting the office. Download, print, and submit at the GP office counter.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <a href="#" class="bg-white/10 p-5 rounded-2xl hover:bg-white/20 transition flex items-center border border-white/5">
+                            <i class="fas fa-file-pdf text-xl mr-4 text-green-400"></i>
+                            <span class="font-semibold">Birth Certificate</span>
+                        </a>
+                        <a href="#" class="bg-white/10 p-5 rounded-2xl hover:bg-white/20 transition flex items-center border border-white/5">
+                            <i class="fas fa-ring text-xl mr-4 text-green-400"></i>
+                            <span class="font-semibold">Marriage Reg.</span>
+                        </a>
+                        <a href="#" class="bg-white/10 p-5 rounded-2xl hover:bg-white/20 transition flex items-center border border-white/5">
+                            <i class="fas fa-home text-xl mr-4 text-green-400"></i>
+                            <span class="font-semibold">Awas Yojana</span>
+                        </a>
+                        <a href="#" class="bg-white/10 p-5 rounded-2xl hover:bg-white/20 transition flex items-center border border-white/5">
+                            <i class="fas fa-id-card text-xl mr-4 text-green-400"></i>
+                            <span class="font-semibold">Income Declare</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-green-900/50 p-10 rounded-3xl border border-green-800">
+                    <h4 class="text-2xl font-bold mb-6">Contact Office</h4>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1.5 mr-4 text-green-400"></i>
+                            <p class="text-green-100">Gram Panchayat Office Nipana, <br>Taluka Khamgaon, Dist Buldhana, <br>Maharashtra - 444303</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-user-tie mr-4 text-green-400"></i>
+                            <p class="text-green-100">Shri. S. T. Gawhale (GPO)</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-4 text-green-400"></i>
+                            <p class="text-green-100">+91 7798761837</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-100 py-12 px-4 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-slate-500">
+            <div class="flex items-center mb-6 md:mb-0">
+                <span class="font-bold text-slate-900 tracking-tighter mr-2">NIPANA DIGITAL</span>
+                <span class="text-xs uppercase px-2 py-0.5 border border-slate-300 rounded">Official</span>
+            </div>
+            <p class="text-sm">&copy; 2025 Nipana Gram Panchayat. All rights reserved.</p>
+            <div class="flex space-x-6 mt-6 md:mt-0">
+                <a href="#" class="hover:text-green-700"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-green-700"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="hover:text-green-700"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
+
